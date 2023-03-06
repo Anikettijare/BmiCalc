@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BMI calculator</title>
+  <meta charset="UTF-8" name="viewport" content="width =device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <script src="bmi.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="box1">
+      <!-- Header Section -->
+      <div>
+        <h1>BMI Calculator</h1>
+      </div>
+      <!-- Form Section -->
+      <form name="myForm" onsubmit="return false">
+        <span>
+          <input type="radio" name="gender" value="male">Male &nbsp;&nbsp;
+          <input type="radio" name="gender" value="female">Female
+        </span>
+        <div class="field">
+          <label>Weight:</label>
+          <input type="number" name="weight" id="weight" placeholder="weight in kg" required>
+        </div>
+        <div>
+          <label>Height:</label>
+          <input type="text" name="height" id="height" placeholder="height in feet" required>
+        </div>
+        <div>
+          <button onclick="myfunc()" id="btn">Check BMI</button>
+        </div>
+        <div>
+          <label>BMI Value:</label>
+          <input type="text" name="BMIvalue" id="bmivalue"><br>
+          <span id="range"></span>
+        </div>
+        <div class="health">
+          Healthy range of BMI is 18.5 to 25
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
