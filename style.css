@@ -60,6 +60,7 @@ form {
 @media (max-width:800px) {
     .box1{
         width: 80%;
-        left: 8%;
+        left: 10%;
+        top:7%
     }  
 }
